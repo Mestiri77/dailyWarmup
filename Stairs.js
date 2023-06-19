@@ -19,9 +19,29 @@
 *!3.)
 
 *!Input: 50
-*!Output: 32 951 280 099
+*!Output: 20365011074
 **
 *? HAPPY coding  ≧◠‿◠≦✌
 */
 
+
+// INPUT OUTPUT 
+//  1 => 1 
+// 2 => 2
+// 3 => 3
+// 4 => 5
+// that remind us the fibonacci sequence let's try and well figure out , that's mean that the a step with 7steps there is 21way to to run it up
+
+
+const stairsSteps = (n) => {
+    if(n === 1 ||n === 2 ) {
+        return n
+    }
+    return stairsSteps(n-1)+stairsSteps(n-2)
+}
+
+
+console.log(stairsSteps(4))
+console.log(stairsSteps(7))
+console.log(stairsSteps(50))
 
